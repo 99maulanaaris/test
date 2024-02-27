@@ -1,0 +1,108 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+.code-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+.code-section:hover {
+    transform: translateY(-10px);
+}
+.code-section p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.copy-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s;
+}
+.copy-icon:hover {
+    color: #000;
+}
+.appstore-logo img {
+    width: 150px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.appstore-logo img:hover {
+    transform: scale(1.1);
+}
+.make-someones-day {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 30px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+.make-someones-day:hover {
+    background-color: #ff5252;
+}
+.footer-logo img {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.footer-logo img:hover {
+    transform: rotate(360deg);
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    .code-section {
+        font-size: 16px;
+    }
+    .appstore-logo img {
+        width: 120px;
+    }
+    .make-someones-day {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+    .footer-logo img {
+        width: 80px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+}
